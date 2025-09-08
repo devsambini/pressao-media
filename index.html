@@ -2,7 +2,7 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <title>Pressão Média</title>
+    <title>Média de 2 Grupos</title>
     <link rel="stylesheet" href="src/style.css">
   </head>
   <body>
@@ -10,22 +10,23 @@
     <div id="main">
       <div id="sis">
         <h3>Sistólica</h3>
-        <input type="number" id="g1v1" inputmode="numeric" /><br />
-        <input type="number" id="g1v2" inputmode="numeric" /><br />
-        <input type="number" id="g1v3" inputmode="numeric" /><br />
+        <input type="number" id="g1v1" /><br />
+        <input type="number" id="g1v2" /><br />
+        <input type="number" id="g1v3" /><br />
       </div>
       <div id="dis">
         <h3>Diastolica</h3>
-        <input type="number" id="g2v1" inputmode="numeric" /><br />
-        <input type="number" id="g2v2" inputmode="numeric" /><br />
-        <input type="number" id="g2v3" inputmode="numeric" /><br />
+        <input type="number" id="g2v1" /><br />
+        <input type="number" id="g2v2" /><br />
+        <input type="number" id="g2v3" /><br />
       </div>
       
-     </div>
-    <button id="btn">Calcular</button>
+    </div>
+    <div id="botoes">
+      <button class="btn1" id="enviar">Enviar</button>
+      <button class="btn2" id="limpar">Limpar</button>
+    </div>
     <h3 id="resultado"></h3>
-    
-
     <script src="src/script.js"></script>
   </body>
 </html>
