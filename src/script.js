@@ -1,4 +1,5 @@
-document.getElementById('btn').addEventListener('click', calcularMedias);
+document.getElementById('enviar').addEventListener('click', calcularMedias);
+document.getElementById('limpar').addEventListener('click', limparInput);
 function calcularMedias() {
   // Grupo 1
   const g1v1 = parseFloat(document.getElementById('g1v1').value);
@@ -19,4 +20,17 @@ function calcularMedias() {
     '<br>' +
     'Diastólica: ' +
     media2.toFixed(0);
+
+    
+}
+
+function limparInput(){
+  document.getElementById('resultado').innerHTML = ""
+  g1v1.value = "";
+  g1v2.value = "";
+  g1v3.value = "";
+
+  g2v1.value = "";
+  g2v2.value = "";
+  g2v3.value = "";
 }
